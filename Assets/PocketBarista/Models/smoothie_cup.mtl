@@ -1,0 +1,29 @@
+newmtl glass
+Kd 0.700 0.850 0.950
+Ka 0 0 0
+Ks 0 0 0
+d 0.35
+illum 1
+
+newmtl neon_pink
+Kd 1.000 0.330 0.620
+Ka 0 0 0
+Ks 0 0 0
+Ke 1.000 0.330 0.620
+d 1.00
+illum 1
+
+newmtl smoothie
+Kd 0.950 0.450 0.550
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl white
+Kd 0.960 0.960 0.940
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

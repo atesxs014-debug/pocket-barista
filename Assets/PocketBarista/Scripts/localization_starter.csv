@@ -1,0 +1,103 @@
+key,tr,en
+ui.money,Para,Money
+ui.xp,Prestij,Prestige
+ui.shop.title,Mağaza,Shop
+ui.shop.buy,Satın Al,Buy
+ui.place.confirm,Yerleştir,Place
+ui.place.rotate,Döndür,Rotate
+ui.place.cancel,İptal,Cancel
+ui.error.not_enough_money,Yetersiz bakiye!,Not enough money!
+ui.error.invalid_position,Buraya yerleştirilemez,Can't place here
+item.table_wood.name,Ahşap Masa,Wooden Table
+item.chair_wood.name,Ahşap Sandalye,Wooden Chair
+item.counter.name,Kahve Tezgahı,Coffee Counter
+item.espresso_machine.name,Espresso Makinesi,Espresso Machine
+item.plant_pot.name,Saksı Bitkisi,Potted Plant
+toast_level_up,Seviye atladın!,Level up!
+toast_product_unlocked,Yeni ürün açıldı,New product unlocked
+toast_staff_hired,Yeni çalışan,New staff hired
+toast_quest_complete,Görev tamamlandı!,Quest complete!
+toast_daily_claimed,Günlük ödül alındı,Daily reward claimed
+toast_boost_started,Gelir x2 aktif (dk),Income x2 active (min)
+ui.tab.build,İnşa,Build
+ui.tab.upgrades,Yükseltmeler,Upgrades
+ui.tab.menu,Menü,Menu
+ui.tab.staff,Personel,Staff
+ui.tab.stats,İstatistik,Stats
+ui.tab.settings,Ayarlar,Settings
+ui.offline.title,Sen yokken kazandın,While you were away
+ui.offline.claim,Topla,Collect
+ui.daily.title,Günlük Ödül,Daily Reward
+ui.daily.day,Gün,Day
+ui.prestige.title,Yeniden Doğuş,Rebirth
+ui.prestige.desc,Dükkanı sıfırla ve kalıcı yıldız kazan. Her yıldız geliri artırır.,Reset your shop to earn permanent stars. Each star boosts income.
+ui.prestige.confirm,Emin misin?,Are you sure?
+ui.quest.claim,Al,Claim
+ui.settings.sfx,Ses efektleri,Sound effects
+ui.settings.music,Müzik,Music
+ui.settings.haptics,Titreşim,Vibration
+ui.settings.language,Dil,Language
+ui.stats.lifetime,Toplam kazanç,Lifetime earnings
+ui.stats.served,Servis edilen müşteri,Customers served
+ui.stats.lost,Kaçan müşteri,Customers lost
+ui.stats.tips,Toplam bahşiş,Total tips
+product.espresso,Espresso,Espresso
+product.latte,Latte,Latte
+product.tea,Çay,Tea
+product.croissant,Kruvasan,Croissant
+product.donut,Donut,Donut
+product.cupcake,Cupcake,Cupcake
+product.cake,Dilim Pasta,Cake Slice
+product.sandwich,Sandviç,Sandwich
+product.smoothie,Smoothie,Smoothie
+customer.student,Öğrenci,Student
+customer.business,İş insanı,Businessperson
+customer.local,Müdavim,Regular
+customer.tourist,Turist,Tourist
+customer.elder,Emekli,Retiree
+staff.barista,Barista,Barista
+staff.waiter,Garson,Waiter
+staff.cashier,Kasiyer,Cashier
+upgrade.income,Kaliteli çekirdek (+gelir),Premium beans (+income)
+upgrade.tips,Güler yüz (+bahşiş),Friendly service (+tips)
+upgrade.prep,Hızlı makineler,Faster machines
+upgrade.staff_speed,Rahat ayakkabı,Comfy shoes
+upgrade.patience,Rahat koltuklar (+sabır),Cozy seats (+patience)
+upgrade.spawn,Reklam panosu (+müşteri),Billboard (+customers)
+upgrade.offline_cap,Gece vardiyası (+çevrimdışı süre),Night shift (+offline time)
+upgrade.offline_rate,Otomat (+çevrimdışı gelir),Vending machine (+offline income)
+upgrade.eat_speed,Paket servis (+hız),Takeaway (+speed)
+quest.serve_5,5 müşteriye servis yap,Serve 5 customers
+quest.place_2,2 eşya yerleştir,Place 2 items
+quest.earn_500,500$ kazan,Earn $500
+quest.unlock_product,Yeni bir ürün aç,Unlock a new product
+quest.hire_1,Bir çalışan işe al,Hire a staff member
+quest.upgrade_3,3 yükseltme satın al,Buy 3 upgrades
+quest.level_5,5. seviyeye ulaş,Reach level 5
+quest.tips_200,200$ bahşiş topla,Collect $200 in tips
+toast_area_unlocked,Yeni bölge açıldı,New area unlocked
+toast_venue_arrived,Hoş geldin,Welcome to
+ui.tab.map,Harita,Map
+ui.venue.here,Buradasın,You are here
+ui.venue.next,Sıradaki,Next
+ui.venue.move,Taşın (yeniden doğuş),Move (rebirth)
+venue.corner,Mahalle Köşesi,Corner Cafe
+venue.corner.desc,Her şeyin başladığı küçük kafe,The little cafe where it all began
+venue.campus,Kampüs Kafesi,Campus Cafe
+venue.campus.desc,Öğrenciler ve sınav kahvesi,Students and exam-night coffee
+venue.beach,Sahil Kafesi,Beach Cafe
+venue.beach.desc,Turistler ve smoothie,Tourists and smoothies
+venue.downtown,Şehir Merkezi,Downtown
+venue.downtown.desc,Aceleci iş insanları ve yüksek fiyatlar,Busy professionals and premium prices
+venue.rooftop,Neon Çatı Katı,Neon Rooftop
+venue.rooftop.desc,Şehrin en havalı gece mekanı,The coolest night spot in town
+area.backroom,Arka Oda,Back Room
+area.terrace,Teras,Terrace
+area.study_hall,Çalışma Salonu,Study Hall
+area.garden,Bahçe,Garden
+area.pier,İskele,Pier
+area.sundeck,Güneşlenme Alanı,Sun Deck
+area.upstairs,Üst Kat,Upstairs
+area.lounge,Lounge,Lounge
+area.bar,Bar,Bar
+area.sky_terrace,Gökyüzü Terası,Sky Terrace

@@ -1,0 +1,44 @@
+newmtl black
+Kd 0.090 0.090 0.100
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl concrete_dk
+Kd 0.380 0.380 0.400
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl glass
+Kd 0.700 0.850 0.950
+Ka 0 0 0
+Ks 0 0 0
+d 0.35
+illum 1
+
+newmtl neon_blue
+Kd 0.300 0.750 1.000
+Ka 0 0 0
+Ks 0 0 0
+Ke 0.300 0.750 1.000
+d 1.00
+illum 1
+
+newmtl neon_purple
+Kd 0.700 0.350 1.000
+Ka 0 0 0
+Ks 0 0 0
+Ke 0.700 0.350 1.000
+d 1.00
+illum 1
+
+newmtl smoothie
+Kd 0.950 0.450 0.550
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

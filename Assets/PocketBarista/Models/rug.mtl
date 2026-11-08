@@ -1,0 +1,14 @@
+newmtl rug
+Kd 0.550 0.300 0.200
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl rug_pattern
+Kd 0.850 0.650 0.350
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

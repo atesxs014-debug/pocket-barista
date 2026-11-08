@@ -1,0 +1,43 @@
+newmtl amber
+Kd 1.000 0.630 0.220
+Ka 0 0 0
+Ks 0 0 0
+Ke 1.000 0.630 0.220
+d 1.00
+illum 1
+
+newmtl black
+Kd 0.090 0.090 0.100
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl crema
+Kd 0.800 0.600 0.380
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl steel
+Kd 0.700 0.710 0.740
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl steel_dark
+Kd 0.400 0.410 0.440
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl white
+Kd 0.960 0.960 0.940
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

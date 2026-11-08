@@ -1,0 +1,14 @@
+newmtl black
+Kd 0.090 0.090 0.100
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl marble
+Kd 0.900 0.880 0.840
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

@@ -1,0 +1,36 @@
+newmtl amber
+Kd 1.000 0.630 0.220
+Ka 0 0 0
+Ks 0 0 0
+Ke 1.000 0.630 0.220
+d 1.00
+illum 1
+
+newmtl chalk
+Kd 0.130 0.160 0.150
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl leather
+Kd 0.380 0.220 0.120
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl paper
+Kd 0.930 0.900 0.840
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl wood_dark
+Kd 0.300 0.180 0.110
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

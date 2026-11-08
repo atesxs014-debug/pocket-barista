@@ -1,0 +1,14 @@
+newmtl tile_grey
+Kd 0.720 0.730 0.740
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl tile_white
+Kd 0.880 0.880 0.860
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

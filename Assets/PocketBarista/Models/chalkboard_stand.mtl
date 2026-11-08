@@ -1,0 +1,21 @@
+newmtl green_board
+Kd 0.180 0.320 0.240
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl white
+Kd 0.960 0.960 0.940
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl wood_dark
+Kd 0.300 0.180 0.110
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

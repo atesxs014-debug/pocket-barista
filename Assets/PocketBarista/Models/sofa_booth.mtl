@@ -1,0 +1,21 @@
+newmtl sofa
+Kd 0.280 0.360 0.340
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl sofa_dark
+Kd 0.190 0.250 0.240
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl wood_dark
+Kd 0.300 0.180 0.110
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

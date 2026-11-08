@@ -1,0 +1,14 @@
+newmtl black
+Kd 0.090 0.090 0.100
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl wood
+Kd 0.620 0.400 0.220
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

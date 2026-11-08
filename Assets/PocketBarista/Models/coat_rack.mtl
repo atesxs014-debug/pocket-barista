@@ -1,0 +1,21 @@
+newmtl beanie
+Kd 0.550 0.180 0.220
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl black
+Kd 0.090 0.090 0.100
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl suit
+Kd 0.170 0.190 0.250
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

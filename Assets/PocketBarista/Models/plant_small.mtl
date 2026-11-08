@@ -1,0 +1,29 @@
+newmtl bean
+Kd 0.240 0.130 0.070
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl cactus
+Kd 0.360 0.600 0.360
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl neon_pink
+Kd 1.000 0.330 0.620
+Ka 0 0 0
+Ks 0 0 0
+Ke 1.000 0.330 0.620
+d 1.00
+illum 1
+
+newmtl terracotta
+Kd 0.780 0.420 0.280
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

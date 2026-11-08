@@ -1,0 +1,35 @@
+newmtl chalk
+Kd 0.130 0.160 0.150
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl glass
+Kd 0.700 0.850 0.950
+Ka 0 0 0
+Ks 0 0 0
+d 0.35
+illum 1
+
+newmtl gold
+Kd 1.000 0.800 0.250
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl money
+Kd 0.420 0.680 0.400
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl paper
+Kd 0.930 0.900 0.840
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

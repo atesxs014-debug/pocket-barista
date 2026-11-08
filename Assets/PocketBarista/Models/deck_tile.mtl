@@ -1,0 +1,14 @@
+newmtl deck
+Kd 0.660 0.500 0.340
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl deck_dark
+Kd 0.550 0.410 0.280
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

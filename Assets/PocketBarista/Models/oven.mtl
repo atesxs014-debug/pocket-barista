@@ -1,0 +1,44 @@
+newmtl amber
+Kd 1.000 0.630 0.220
+Ka 0 0 0
+Ks 0 0 0
+Ke 1.000 0.630 0.220
+d 1.00
+illum 1
+
+newmtl black
+Kd 0.090 0.090 0.100
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl oven_glow
+Kd 1.000 0.450 0.150
+Ka 0 0 0
+Ks 0 0 0
+Ke 1.000 0.450 0.150
+d 1.00
+illum 1
+
+newmtl pastry
+Kd 0.880 0.620 0.280
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl steel
+Kd 0.700 0.710 0.740
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl steel_dark
+Kd 0.400 0.410 0.440
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

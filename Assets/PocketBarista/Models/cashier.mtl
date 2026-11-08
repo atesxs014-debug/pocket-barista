@@ -1,0 +1,77 @@
+newmtl apron
+Kd 0.200 0.250 0.220
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl black
+Kd 0.090 0.090 0.100
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl eye
+Kd 0.060 0.060 0.070
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl eye_white
+Kd 1.000 1.000 1.000
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl hair_brown
+Kd 0.420 0.250 0.130
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl jeans
+Kd 0.220 0.300 0.450
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl mouth
+Kd 0.550 0.200 0.200
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl paper
+Kd 0.930 0.900 0.840
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl red_shirt
+Kd 0.700 0.180 0.180
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl shoe
+Kd 0.120 0.110 0.110
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl skin_a
+Kd 0.960 0.780 0.640
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

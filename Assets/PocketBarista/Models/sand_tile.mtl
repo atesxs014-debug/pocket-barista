@@ -1,0 +1,14 @@
+newmtl sand
+Kd 0.900 0.800 0.580
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl sand_dark
+Kd 0.820 0.710 0.500
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

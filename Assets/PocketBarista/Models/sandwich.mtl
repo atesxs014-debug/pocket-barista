@@ -1,0 +1,35 @@
+newmtl bread
+Kd 0.900 0.740 0.480
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl cheese
+Kd 0.980 0.820 0.300
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl lettuce
+Kd 0.500 0.780 0.300
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl tomato
+Kd 0.880 0.250 0.200
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl white
+Kd 0.960 0.960 0.940
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

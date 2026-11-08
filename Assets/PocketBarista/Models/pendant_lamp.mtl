@@ -1,0 +1,23 @@
+newmtl amber
+Kd 1.000 0.630 0.220
+Ka 0 0 0
+Ks 0 0 0
+Ke 1.000 0.630 0.220
+d 1.00
+illum 1
+
+newmtl black
+Kd 0.090 0.090 0.100
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl bulb
+Kd 1.000 0.860 0.550
+Ka 0 0 0
+Ks 0 0 0
+Ke 1.000 0.860 0.550
+d 1.00
+illum 1
+

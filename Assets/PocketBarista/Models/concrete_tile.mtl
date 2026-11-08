@@ -1,0 +1,14 @@
+newmtl concrete
+Kd 0.500 0.500 0.520
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl concrete_dk
+Kd 0.380 0.380 0.400
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

@@ -1,0 +1,64 @@
+newmtl book_blue
+Kd 0.200 0.350 0.600
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl book_green
+Kd 0.250 0.500 0.350
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl book_red
+Kd 0.700 0.200 0.180
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl coffee
+Kd 0.320 0.180 0.090
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl laptop
+Kd 0.620 0.640 0.680
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl screen
+Kd 0.450 0.700 0.950
+Ka 0 0 0
+Ks 0 0 0
+Ke 0.450 0.700 0.950
+d 1.00
+illum 1
+
+newmtl steel_dark
+Kd 0.400 0.410 0.440
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl white
+Kd 0.960 0.960 0.940
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl wood_light
+Kd 0.780 0.560 0.330
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

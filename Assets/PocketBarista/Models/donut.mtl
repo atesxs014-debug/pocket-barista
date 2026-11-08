@@ -1,0 +1,35 @@
+newmtl frosting
+Kd 0.980 0.620 0.740
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl hawaii_dot
+Kd 0.980 0.850 0.300
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl pastry
+Kd 0.880 0.620 0.280
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl sprinkle
+Kd 0.400 0.750 0.950
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl white
+Kd 0.960 0.960 0.940
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

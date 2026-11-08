@@ -1,0 +1,49 @@
+newmtl cork
+Kd 0.750 0.580 0.380
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl frosting
+Kd 0.980 0.620 0.740
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl hawaii_dot
+Kd 0.980 0.850 0.300
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl paper
+Kd 0.930 0.900 0.840
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl sprinkle
+Kd 0.400 0.750 0.950
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl stripe_red
+Kd 0.880 0.300 0.280
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl wood_dark
+Kd 0.300 0.180 0.110
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+

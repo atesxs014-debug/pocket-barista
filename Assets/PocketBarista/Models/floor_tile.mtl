@@ -1,0 +1,14 @@
+newmtl plank_a
+Kd 0.360 0.240 0.160
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
+newmtl plank_b
+Kd 0.310 0.210 0.140
+Ka 0 0 0
+Ks 0 0 0
+d 1.00
+illum 1
+
