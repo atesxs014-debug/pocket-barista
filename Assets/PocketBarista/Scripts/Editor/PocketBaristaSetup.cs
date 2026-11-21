@@ -448,7 +448,7 @@ public static class PocketBaristaSetup
             tmp.fontSize = 5f;
             tmp.alignment = TextAlignmentOptions.Center;
             tmp.fontStyle = FontStyles.Bold;
-            tmp.outlineWidth = 0.2f;
+            if (_font != null) tmp.outlineWidth = 0.2f; // Font yoksa materyal de yok
             tmp.rectTransform.sizeDelta = new Vector2(4f, 1.2f);
             Comp<FloatingText>(go, ("label", tmp));
             SavePrefab(go, "FloatingText");

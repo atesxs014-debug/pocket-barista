@@ -1,7 +1,10 @@
 #if UNITY_EDITOR
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.IO.Compression;
 using System.Linq;
+using System.Text;
 using UnityEditor;
 using UnityEditor.Build.Reporting;
 using UnityEngine;
@@ -79,12 +82,91 @@ public static class PocketBaristaCI
         {
             string full = Path.GetFullPath(c);
             if (!File.Exists(full)) continue;
-            Debug.Log("[CI] TMP Essential Resources içe aktarılıyor: " + full);
-            AssetDatabase.ImportPackage(full, false);
+            Debug.Log("[CI] TMP Essential Resources açılıyor: " + full);
+            // AssetDatabase.ImportPackage batch modda asenkron çalışır ve kurulumdan önce bitmez.
+            // Bu yüzden .unitypackage (tar.gz) dosyasını kendimiz açıp dosyaları Assets'e yazıyoruz.
+            int count = ExtractUnityPackage(full);
             AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+            Debug.Log($"[CI] TMP Essential Resources: {count} dosya yazıldı.");
             return;
         }
         Debug.LogWarning("[CI] TMP Essential Resources paketi bulunamadı.");
+    }
+
+    /// <summary>.unitypackage = tar.gz; her GUID klasöründe pathname, asset ve asset.meta bulunur.</summary>
+    private static int ExtractUnityPackage(string packagePath)
+    {
+        var entries = new Dictionary<string, Dictionary<string, byte[]>>();
+        using (FileStream fs = File.OpenRead(packagePath))
+        using (var gz = new GZipStream(fs, CompressionMode.Decompress))
+        {
+            var header = new byte[512];
+            string longName = null;
+            while (ReadFull(gz, header, 512))
+            {
+                if (header[0] == 0) break; // Arşiv sonu
+                string name = longName ?? CString(header, 0, 100);
+                longName = null;
+                string prefix = CString(header, 345, 155);
+                if (!string.IsNullOrEmpty(prefix)) name = prefix + "/" + name;
+                string octal = CString(header, 124, 12).Trim();
+                long size = octal.Length > 0 ? Convert.ToInt64(octal, 8) : 0;
+                char type = (char)header[156];
+                var data = new byte[size];
+                if (size > 0 && !ReadFull(gz, data, (int)size)) break;
+                long pad = (512 - size % 512) % 512;
+                if (pad > 0) ReadFull(gz, new byte[pad], (int)pad);
+
+                if (type == 'L') { longName = Encoding.UTF8.GetString(data).TrimEnd('\0'); continue; }
+                if (type != '0' && type != '\0') continue; // Sadece normal dosyalar
+
+                name = name.TrimStart('.', '/');
+                int slash = name.IndexOf('/');
+                if (slash <= 0) continue;
+                string guid = name.Substring(0, slash);
+                string file = name.Substring(slash + 1);
+                if (!entries.TryGetValue(guid, out var files)) entries[guid] = files = new Dictionary<string, byte[]>();
+                files[file] = data;
+            }
+        }
+
+        string projectRoot = Path.GetDirectoryName(Application.dataPath);
+        int written = 0;
+        foreach (var kv in entries)
+        {
+            if (!kv.Value.TryGetValue("pathname", out byte[] pn)) continue;
+            string rel = Encoding.UTF8.GetString(pn).Split('\n')[0].Trim();
+            if (!rel.StartsWith("Assets/")) continue;
+            string dest = Path.Combine(projectRoot, rel);
+            if (kv.Value.TryGetValue("asset", out byte[] asset))
+            {
+                Directory.CreateDirectory(Path.GetDirectoryName(dest));
+                File.WriteAllBytes(dest, asset);
+                written++;
+            }
+            else Directory.CreateDirectory(dest);
+            if (kv.Value.TryGetValue("asset.meta", out byte[] meta)) File.WriteAllBytes(dest + ".meta", meta);
+        }
+        return written;
+    }
+
+    private static bool ReadFull(Stream s, byte[] buf, int count)
+    {
+        int off = 0;
+        while (off < count)
+        {
+            int n = s.Read(buf, off, count - off);
+            if (n <= 0) return false;
+            off += n;
+        }
+        return true;
+    }
+
+    private static string CString(byte[] b, int start, int len)
+    {
+        int end = start;
+        while (end < start + len && b[end] != 0) end++;
+        return Encoding.ASCII.GetString(b, start, end - start);
     }
 
     private static string Arg(string name)
