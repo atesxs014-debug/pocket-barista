@@ -6,6 +6,7 @@ name: Build
 on:
   push:
     branches: [main]
+    paths-ignore: ['.github/workflows/publish.yml', 'README.md', 'Docs/**']
   workflow_dispatch:
 
 concurrency:
@@ -116,3 +117,33 @@ jobs:
           name: PocketBarista-iOS-IPA-unsigned
           path: out/PocketBarista-unsigned.ipa
           retention-days: 14
+
+  release:
+    name: İndirme linki (Release)
+    needs: [android, ios-ipa]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: PocketBarista-Android-APK
+          path: dist
+      - uses: actions/download-artifact@v4
+        with:
+          name: PocketBarista-iOS-IPA-unsigned
+          path: dist
+      - name: Dosya adlarını sabitle
+        run: |
+          find dist -name "*.apk" -exec mv {} dist/PocketBarista.apk \;
+          find dist -name "*.ipa" -exec mv {} dist/PocketBarista.ipa \;
+          ls -la dist
+      - uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Pocket Barista (son sürüm)
+          body: "Otomatik derleme #${{ github.run_number }}. Android: PocketBarista.apk, iPhone (imzasız): PocketBarista.ipa"
+          make_latest: true
+          files: |
+            dist/PocketBarista.apk
+            dist/PocketBarista.ipa
