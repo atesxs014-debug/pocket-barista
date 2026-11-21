@@ -270,6 +270,14 @@ public static class PocketBaristaSetup
         return t;
     }
 
+    // Unity nesneleri "??" ile kontrol edilemez (sahte null); bu yardımcı güvenli şekilde ekler.
+    private static T GetOrAdd<T>(GameObject go) where T : Component
+    {
+        T c = go.GetComponent<T>();
+        if (c == null) c = go.AddComponent<T>();
+        return c;
+    }
+
     private static void FitBoxCollider(GameObject go, bool trigger = false)
     {
         var b = new Bounds(go.transform.position, Vector3.zero);
@@ -278,7 +286,7 @@ public static class PocketBaristaSetup
         {
             if (!any) { b = r.bounds; any = true; } else b.Encapsulate(r.bounds);
         }
-        var col = go.GetComponent<BoxCollider>() ?? go.AddComponent<BoxCollider>();
+        BoxCollider col = GetOrAdd<BoxCollider>(go);
         col.center = go.transform.InverseTransformPoint(b.center);
         col.size = new Vector3(Mathf.Max(0.1f, b.size.x), Mathf.Max(0.1f, b.size.y), Mathf.Max(0.1f, b.size.z));
         col.isTrigger = trigger;
@@ -367,7 +375,7 @@ public static class PocketBaristaSetup
 
     private static T Comp<T>(GameObject go, params (string field, object value)[] fields) where T : Component
     {
-        T c = go.GetComponent<T>() ?? go.AddComponent<T>();
+        T c = GetOrAdd<T>(go);
         if (fields.Length > 0)
         {
             var so = new SerializedObject(c);
@@ -1290,7 +1298,7 @@ public static class PocketBaristaSetup
 
     private static Image Img(GameObject go, Color c)
     {
-        Image img = go.GetComponent<Image>() ?? go.AddComponent<Image>();
+        Image img = GetOrAdd<Image>(go);
         img.color = c;
         img.sprite = WhiteSprite();
         img.type = Image.Type.Sliced;
